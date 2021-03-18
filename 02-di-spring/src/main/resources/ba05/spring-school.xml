@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- school模块所有bean的声明 School模块的配置文件 -->
+    <bean id="typeschool" class="com.valo.di.ba05.School">
+        <property name="name" value="东南大学***"></property>
+        <property name="address" value="北京海淀区"></property>
+    </bean>
+
+</beans>

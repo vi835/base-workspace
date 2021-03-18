@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="02-di-spring" />
+        <module name="01-hello-spring" />
+        <module name="03-ioc-homework" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="01-hello-spring" target="1.7" />
+      <module name="02-di-spring" target="1.7" />
+      <module name="03-ioc-homework" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
