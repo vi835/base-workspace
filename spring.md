@@ -153,20 +153,18 @@ spring是一个容器 管理对象 给属性赋值 底层是反射创建对象
 ###### 常用注解
 
 1. @Component
-
 2. @Repository
-
 3. @Service
-
 4. @Controller
-
 5. @Value
-
 6. @Autowired
-
 7. @Resource
 
-   
+
+
+# CGLB
+
+CGLB代理的生成原理是生成目标类的子类 而子类是增强过的 这个子类对象就是代理对象 所以 使用CGLB生成动态代理 要求目标类必须能够被继承 即不能是final的类
 
  
 

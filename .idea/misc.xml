@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/02-di-spring/pom.xml" />
         <option value="$PROJECT_DIR$/02-ioc-homework/pom.xml" />
         <option value="$PROJECT_DIR$/03-ioc-homework/pom.xml" />
+        <option value="$PROJECT_DIR$/04-di-annoation/pom.xml" />
+        <option value="$PROJECT_DIR$/05-aop-leadin/pom.xml" />
       </list>
     </option>
   </component>

@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="02-di-spring" />
+        <module name="04-di-annotation" />
         <module name="01-hello-spring" />
+        <module name="02-di-spring" />
+        <module name="05-aop-leadin" />
         <module name="03-ioc-homework" />
       </profile>
     </annotationProcessing>
@@ -15,6 +17,8 @@
       <module name="01-hello-spring" target="1.7" />
       <module name="02-di-spring" target="1.7" />
       <module name="03-ioc-homework" target="1.7" />
+      <module name="04-di-annotation" target="1.7" />
+      <module name="05-aop-leadin" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
