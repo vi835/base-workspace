@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/03-ioc-homework/pom.xml" />
         <option value="$PROJECT_DIR$/04-di-annoation/pom.xml" />
         <option value="$PROJECT_DIR$/05-aop-leadin/pom.xml" />
+        <option value="$PROJECT_DIR$/extra-proxy/pom.xml" />
       </list>
     </option>
   </component>

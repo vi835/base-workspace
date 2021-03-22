@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/03-ioc-homework/03-ioc-homework.iml" filepath="$PROJECT_DIR$/03-ioc-homework/03-ioc-homework.iml" />
       <module fileurl="file://$PROJECT_DIR$/04-di-annotation/04-di-annotation.iml" filepath="$PROJECT_DIR$/04-di-annotation/04-di-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/05-aop-leadin/05-aop-leadin.iml" filepath="$PROJECT_DIR$/05-aop-leadin/05-aop-leadin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex01-static-proxy/ex01-static-proxy.iml" filepath="$PROJECT_DIR$/ex01-static-proxy/ex01-static-proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex02-reflect-method/ex02-reflect-method.iml" filepath="$PROJECT_DIR$/ex02-reflect-method/ex02-reflect-method.iml" />
     </modules>
   </component>
 </project>
