@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/04-di-annotation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/04-di-annotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05-aop-leadin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-aop-aspectj/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ex01-static-proxy/src/main/java" charset="UTF-8" />
   </component>
 </project>

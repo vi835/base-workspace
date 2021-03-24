@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/04-di-annoation/pom.xml" />
         <option value="$PROJECT_DIR$/05-aop-leadin/pom.xml" />
         <option value="$PROJECT_DIR$/extra-proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/06-aop-aspectj/pom.xml" />
+        <option value="$PROJECT_DIR$/ex01-static-proxy/pom.xml" />
       </list>
     </option>
   </component>
