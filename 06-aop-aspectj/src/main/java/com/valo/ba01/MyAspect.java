@@ -1,7 +1,9 @@
 package com.valo.ba01;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
@@ -82,9 +84,57 @@ public class MyAspect {
         // Object args 是目标方法执行后的返回值 根据返回值做你的切面的功能处理
         System.out.println("后置通知 在目标方法之后执行的 获取的返回值是：" + res);
         if ("abcd".equals(res)) {
-
+            System.out.println("执行了equals方法");
+            res = "hello aspectj";
         } else {
-            
+
         }
+    }
+
+    /**
+     * 环绕通知方法的格式
+     * 1.public
+     * 2.必须有一个返回值 推荐使用Object
+     * 3.方法名称自定义
+     * 4.方法有参数 固定的参数
+     * @param joinPoint ProceedingJoinPoint
+     * @return
+     */
+    /**
+     * @param joinPoint
+     * @return
+     * @Around 环绕通知
+     * 属性 value 切入点表达式
+     * 特点
+     * 1.他是功能最强的通知
+     * 2.在目标方法的前和后都能增强功能
+     * 3.控制目标方法是否被调用执行
+     * 4修改原来的目标方法的执行 影响最后的调用结果
+     * <p>
+     * 环绕通知 等同于jdk动态代理的 InvocationHandler接口
+     * 参数 ProceedingJoinPoint 等同于 Method
+     * 作用 执行目标方法的
+     * 返回值 就是目标方法的执行结果 可以被修改
+     */
+    @Around(value = "execution(* *..SomeServiceImpl.doOther(..))")
+    public Object myAround(ProceedingJoinPoint joinPoint) throws Throwable {
+        // 实现环绕通知
+        Object result = null;
+        System.out.println("环绕通知：在目标方法之前 输出时间：" + new Date());
+
+        Object[] args = joinPoint.getArgs();
+
+        String name = "";
+        if (args != null && args.length > 1) {
+            Object arg = args[0];
+            name = (String) arg;
+        }
+
+        //1 目标方法调用
+        result = joinPoint.proceed();// method.invoke()
+        System.out.println("环绕通知：在目标方法之后 提交事务");
+
+        //2 在目标方法的前或者后加入功能
+        return result;
     }
 }
