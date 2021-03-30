@@ -9,7 +9,10 @@
     关键字 classpath表示类路径(class文件所在的目录) 在spring的配置文件中要指定其他文件的位置
           需要使用classpath 告诉spring到哪去加载读取文件
     -->
+    <import resource="classpath:ba05/spring-school.xml"></import>
+    <import resource="classpath:ba05/spring-student.xml"></import>
 
-    <!-- 在包含关系的配置文件中 可以使用通配符(*:表示任意字符)-->
+    <!-- 在包含关系的配置文件中 可以使用通配符(*:表示任意字符)
+    注意 主的配置文件名称不能包含在通配符的范围内(不能叫做spring-total.xml)-->
     <import resource="classpath:ba05/spring-*.xml"></import>
 </beans>

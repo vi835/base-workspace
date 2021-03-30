@@ -5,6 +5,7 @@
 
     <!--  你要用哪个对象 就是要bean声明那个对象  -->
     <bean id="mysqlDao" class="com.valo.dao.impl.UserDaoImpl"></bean>
+    <bean id="oracleDao" class="com.valo.dao.impl.OracleDaoImpl"></bean>
 
     <!-- 声明service对象 -->
     <bean id="userService" class="com.valo.service.impl.UserServiceImpl">

@@ -11,6 +11,8 @@
       <module fileurl="file://$PROJECT_DIR$/ex01-static-proxy/ex01-static-proxy.iml" filepath="$PROJECT_DIR$/ex01-static-proxy/ex01-static-proxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/ex02-reflect-method/ex02-reflect-method.iml" filepath="$PROJECT_DIR$/ex02-reflect-method/ex02-reflect-method.iml" />
       <module fileurl="file://$PROJECT_DIR$/ex03-dynamic-proxy/ex03-dynamic-proxy.iml" filepath="$PROJECT_DIR$/ex03-dynamic-proxy/ex03-dynamic-proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex04-mybatis/ex04-mybatis.iml" filepath="$PROJECT_DIR$/ex04-mybatis/ex04-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex04-mybatis/mybatis-01-base/mybatis-01-base.iml" filepath="$PROJECT_DIR$/ex04-mybatis/mybatis-01-base/mybatis-01-base.iml" />
     </modules>
   </component>
 </project>

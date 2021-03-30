@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: com.valo.mybatis.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.076 s <<< FAILURE! - in com.valo.mybatis.AppTest
+test01(com.valo.mybatis.AppTest)  Time elapsed: 1.047 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 663 milliseconds ago.  The last packet sent successfully to the server was 660 milliseconds ago.
+### The error may exist in UserMapper.xml
+### The error may involve com.valo.mybatis.mapper.UserMapper.getUser
+### The error occurred while executing a query
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 663 milliseconds ago.  The last packet sent successfully to the server was 660 milliseconds ago.
+	at com.valo.mybatis.AppTest.test01(AppTest.java:20)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: 
+Communications link failure
+
+The last packet successfully received from the server was 663 milliseconds ago.  The last packet sent successfully to the server was 660 milliseconds ago.
+	at com.valo.mybatis.AppTest.test01(AppTest.java:20)
+Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at com.valo.mybatis.AppTest.test01(AppTest.java:20)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at com.valo.mybatis.AppTest.test01(AppTest.java:20)
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at com.valo.mybatis.AppTest.test01(AppTest.java:20)
+
