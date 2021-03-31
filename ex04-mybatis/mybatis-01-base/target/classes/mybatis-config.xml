@@ -9,9 +9,9 @@
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/bases?useSSL=false"/>
-                <property name="username" value="admin"/>
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/bases?serverTimezone=UTC"/>
+                <property name="username" value="root"/>
                 <property name="password" value="123456"/>
             </dataSource>
         </environment>
@@ -19,6 +19,6 @@
 
     <!-- 每一个mapper.xml都需要在Mybatis核心配置文件中注册 -->
     <mappers>
-        <mapper resource="UserMapper.xml"/>
+        <mapper resource="mapper/UserMapper.xml"/>
     </mappers>
 </configuration>

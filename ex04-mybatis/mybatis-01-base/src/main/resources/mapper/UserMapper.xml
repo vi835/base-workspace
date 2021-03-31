@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace绑定一个对应的mapper接口 -->
+<mapper namespace="com.valo.mybatis.mapper.UserMapper">
+    <select id="getUser" resultType="com.valo.mybatis.domain.User">
+        select *
+        from user
+    </select>
+
+    <select id="getUserById" resultType="com.valo.mybatis.domain.User" parameterType="int">
+        select *
+        from user
+        where id = #{id}
+    </select>
+
+    <insert id="insertUser" parameterType="com.valo.mybatis.domain.User">
+        insert into user(id, name, pwd) value (#{id},#{name},#{pwd})
+    </insert>
+
+    <insert id="insertUser2" parameterType="map">
+        insert into user(id, name, pwd) value (#{userId},#{userName},#{password})
+    </insert>
+</mapper>

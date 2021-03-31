@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/06-aop-aspectj/pom.xml" />
         <option value="$PROJECT_DIR$/ex01-static-proxy/pom.xml" />
         <option value="$PROJECT_DIR$/ex04-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/ex04-mybatis-base/pom.xml" />
       </list>
     </option>
   </component>
