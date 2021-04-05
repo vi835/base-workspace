@@ -23,4 +23,14 @@
     <insert id="insertUser2" parameterType="map">
         insert into user(id, name, pwd) value (#{userId},#{userName},#{password})
     </insert>
+
+    <select id="getUserByLimit" resultType="com.valo.mybatis.domain.User" parameterType="map">
+        select *
+        from user limit #{startIndex},#{pageSize}
+    </select>
+
+    <select id="getUserByRowBounds" resultType="com.valo.mybatis.domain.User">
+        select *
+        from user
+    </select>
 </mapper>

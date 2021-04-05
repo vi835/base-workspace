@@ -13,4 +13,9 @@ public interface UserMapper {
     Integer insertUser(User user);
 
     Integer insertUser2(Map<Object,Object> map);
+
+    // 分页
+    List<User> getUserByLimit(Map<String,Integer> map);
+
+    List<User> getUserByRowBounds();
 }
